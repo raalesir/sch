@@ -49,19 +49,19 @@ A very simple tests with `pytest` are implemented.
     source schibsted/bin/activate
     ```
 1. install `pytest`
-```bash
-pip3 install -r requirements.txt
-```
-or skip it if used created  environment
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+   or skip it if used created  environment
 1. run tests
-```bash
-pytest search.py
-```
-Both should pass
+   ```bash
+   pytest search.py
+   ```
+  Both should pass
 1. launch text search engine:
-```bash
-./search.py
-```
+   ```bash
+   ./search.py
+   ```
 
 ##  Example of usage:
 
