@@ -40,14 +40,14 @@ A very simple tests with `pytest` are implemented.
 1. `❯ git clone https://github.com/raalesir/sch.git`
 1. `cd sch`
 1. create virtual env for python3
-```bash
-python3 -m venv sch
-source sch/bin/activate
-```
-or use already existing
-```bash
-source schibsted/bin/activate
-or use already existing:
+    ```bash
+    python3 -m venv sch
+    source sch/bin/activate
+    ```
+    or use already existing
+    ```bash
+    source schibsted/bin/activate
+    ```
 1. install `pytest`
 ```bash
 pip3 install -r requirements.txt
