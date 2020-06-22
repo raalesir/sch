@@ -19,7 +19,7 @@ In  this case for sake of simplicity and speed, the `set` was used.
 Each text file content after filtering is being  prerpocessed by applying
 `set` to `list`. The first thing is it  removes word duplicates, so we get
 a vocabulary to search against. And the second reason is performance --
-operation for  `element is set` has a O(1) complexity,
+operation for  `element in set` has a O(1) complexity,
 what  is the best possible.
 
 >What constitutes two words being equal (and matching)
