@@ -80,7 +80,7 @@ def read_files(data_dir):
     for root, dirs, files in os.walk(data_dir):
         for file in files:
             path = os.path.join('data', file)
-            print(path)
+            print('text file: ', path)
             with open(path) as f:
                 files_content.append({'name': path, 'content': f.read()})
 
@@ -130,7 +130,7 @@ if __name__=="__main__":
     while True:
         words_to_find = set(input("input  words separated by space\nto quit type  'q'\nsearch> ").split())
         if 'q' not in words_to_find:
-            print(words_to_find)
+            print('words to look for: ', words_to_find)
             data_dir = 'data'
             files_content = read_files(data_dir)
 
@@ -141,6 +141,7 @@ if __name__=="__main__":
             clean_content = filter_content(files_content)
 
             results = calculate_fraction(clean_content, words_to_find)
+            print("the results: ")
             for line in rank(results):
                 print(line)
             print(30*"=")
