@@ -3,7 +3,7 @@
 The exercise is to write a command-line text search engine.
  > Remember that the code should be executable on different machines running different operating systems and configurations.
 
-There are different ways how to achieve that: VM, Docker... Here  I used
+There are different ways how to achieve that: VM, Docker container... Here  I used
 `Python` virtual environment. To be really independent I  could put the code
 on a  remote   machine.
 
@@ -37,15 +37,22 @@ A very simple tests with `pytest` are implemented.
 
 ## Usage:
 
+1. `❯ git clone https://github.com/raalesir/sch.git`
+1. `cd sch`
 1. create virtual env for python3
 ```bash
 python3 -m venv sch
 source sch/bin/activate
 ```
+or use already existing
+```bash
+source schibsted/bin/activate
+or use already existing:
 1. install `pytest`
 ```bash
 pip3 install -r requirements.txt
 ```
+or skip it if used created  environment
 1. run tests
 ```bash
 pytest search.py
