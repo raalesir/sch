@@ -57,7 +57,7 @@ A very simple tests with `pytest` are implemented.
    ```bash
    pytest search.py
    ```
-  Both should pass
+   Both should pass
 1. launch text search engine:
    ```bash
    ./search.py
